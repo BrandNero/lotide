@@ -8,6 +8,8 @@ const assertObjectsEqual = function(object1, object2) {
     console.log(`🟥🟥🟥 Assertion Failed: ${inspect(object1)} !== ${inspect(object2)}`);
   }
 };
+
+module.exports = assertObjectsEqual;
 const shirtObject = {color: "red", size: "medium"};
 const anotherShirtObject = {size: "medium", color: "red"};
 assertObjectsEqual(shirtObject, anotherShirtObject);

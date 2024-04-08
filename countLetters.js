@@ -13,7 +13,7 @@ const countLetters = function(sentence) {
   }
   return result;
 };
-module.exports = countLetters
+module.exports = countLetters;
 const result1 = countLetters("lighthouse");
 assertEqual(result1["l"], 1);
 assertEqual(result1["i"], 1);
