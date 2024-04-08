@@ -1,5 +1,4 @@
 const assert = require("chai").assert;
-const assertEqual = require("../assertEqual");
 const tail = require("../tail");
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
