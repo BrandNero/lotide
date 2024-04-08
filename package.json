@@ -1,0 +1,26 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "clone of lodash",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandNero/lotide.git"
+  },
+  "author": "brandnero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandNero/lotide/issues"
+  },
+  "homepage": "https://github.com/BrandNero/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.1",
+    "mocha": "^9.2.2"
+  }
+}
