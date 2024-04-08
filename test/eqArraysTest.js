@@ -1,8 +1,18 @@
+const assert = require("chai").assert;
 const assertEqual = require("../assertEqual");
 const eqArrays = require("../eqArrays");
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
-
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+describe("#eqArrays", () => {
+  it("return true from [1, 2, 3]", () => {
+    assert.strictEqual(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
+  });
+  it("returns false from [1, 2, 3]", () => {
+    assert.strictEqual(assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false));
+  });
+  it("return true from '[\"1\", \"2\", \"3\"]'", () => {
+    assert.strictEqual(assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true));
+  });
+  it("returns false from '[\"1\", \"2\", \"3\"]'", () => {
+    assert.strictEqual(assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false));
+  });
+});
